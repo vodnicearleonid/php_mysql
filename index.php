@@ -9,12 +9,21 @@
 </head>
 <body>
 <?php
-$a = 1;
-$b = 99;
-echo $a + $b;
-echo "<br><b>Hello</b> world";
-echo "\"";
-//Coment
+
+define('MY_AGE', 37);
+echo MY_AGE . '<br>';
+
+$number = 5; //int
+//$number = 45;
+$num = -0.56; //float
+$str = "Variabilele"; //string
+$bool = false; // boolean
+$a = 0.5;
+$b = "0.5";
+
+echo $a + floatval($b) . "</br>";
+
+echo $str . ': ' . $number . '.Var 2 ' . $num;
 ?>
 
 </body>
