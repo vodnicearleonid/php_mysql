@@ -45,7 +45,7 @@ $rand = mt_rand ($min , $max ). "<br>";// numar aleatoriu in finctie de interval
 echo $rand++. "<br>";
 
 echo min(3, 9, 6, 4, 8, 1)."<br>"; // gaseste valoarea minima  1
-echo max(3, 9, 6, 4, 8, 1)."<br>"; // gaseste valoarea minima  1
+echo max(3, 9, 6, 4, 8, 1)."<br>"; // gaseste valoarea minima  9
 
 
 ?>
