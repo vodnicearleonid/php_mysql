@@ -10,42 +10,24 @@
 <body>
 <?php
 
-$x = 10;
-$y = 20;
+$str = "HELLO";
+echo "VAR: $str"."<br>";// VAR: HELLO
+echo 'VAR: $str'."<br>";// VAR: $str
 
-echo $x + $y . "<br>";
-echo $x - $y . "<br>";
-echo $x  * $y . "<br>";
-echo $x / $y . "<br>";
-echo $x % $y . "<br>";
+echo "Input type text: <input type='text'>";
 
-$x += 10; //$x = $x + 10;
-$y -= 10; //$y = $y - 10;
-echo $x."<br>";
-echo $y."<br>";
+echo "<br>";
+$length = strlen($str);
+echo strtoupper(trim("   test   ")) ; // TEST5
+echo $length;// 5
 
-$x++; //$x += 1;
-$y--; //$y -= 1;
+echo "<br>";
+echo md5("vodnicear@gmail.com"); // 8936f3acc4a6e46f1dcc0533b51bb8ea
 
-echo $x."<br>";
-echo $y."<br>";
 
-echo M_PI."<br>";
-echo M_E."<br>";
 
-echo abs(-22)."<br>";
-echo ceil(3.1)."<br>";//rotungeste numarul res 4
-echo floor(3.9)."<br>";//rotungeste numarul res 3
-echo round(3.9)."<br>";//rotungeste numarul 3.9 = 4, 3.1 = 3
-echo round(3.9474848, 3)."<br>";//rotungeste numarul parametru indica cite cifre dupa punct
 
-$min = 5;
-$max = 59;
-$rand = mt_rand ($min , $max ). "<br>";// numar aleatoriu in finctie de interval
-echo $rand++. "<br>";
 
-echo min(3, 9, 6, 4, 8, 1)."<br>"; // gaseste valoarea minima  1
-echo max(3, 9, 6, 4, 8, 1)."<br>"; // gaseste valoarea minima  9
 
 
 ?>
