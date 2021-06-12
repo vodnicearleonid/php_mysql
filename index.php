@@ -10,22 +10,45 @@
 <body>
 <?php
 
-define('MY_AGE', 37);
-echo MY_AGE . '<br>';
+$x = 10;
+$y = 20;
 
-$number = 5; //int
-//$number = 45;
-$num = -0.56; //float
-$str = "Variabilele"; //string
-$bool = false; // boolean
-$a = 0.5;
-$b = "0.5";
+echo $x + $y . "<br>";
+echo $x - $y . "<br>";
+echo $x  * $y . "<br>";
+echo $x / $y . "<br>";
+echo $x % $y . "<br>";
 
-echo $a + floatval($b) . "</br>";
+$x += 10; //$x = $x + 10;
+$y -= 10; //$y = $y - 10;
+echo $x."<br>";
+echo $y."<br>";
 
-echo $str . ': ' . $number . '.Var 2 ' . $num;
+$x++; //$x += 1;
+$y--; //$y -= 1;
+
+echo $x."<br>";
+echo $y."<br>";
+
+echo M_PI."<br>";
+echo M_E."<br>";
+
+echo abs(-22)."<br>";
+echo ceil(3.1)."<br>";//rotungeste numarul res 4
+echo floor(3.9)."<br>";//rotungeste numarul res 3
+echo round(3.9)."<br>";//rotungeste numarul 3.9 = 4, 3.1 = 3
+echo round(3.9474848, 3)."<br>";//rotungeste numarul parametru indica cite cifre dupa punct
+
+$min = 5;
+$max = 59;
+$rand = mt_rand ($min , $max ). "<br>";// numar aleatoriu in finctie de interval
+echo $rand++. "<br>";
+
+echo min(3, 9, 6, 4, 8, 1)."<br>"; // gaseste valoarea minima  1
+echo max(3, 9, 6, 4, 8, 1)."<br>"; // gaseste valoarea minima  1
+
+
 ?>
-
 </body>
 </html>
 
