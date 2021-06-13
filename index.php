@@ -14,40 +14,24 @@
 
 <?php
 
-/*
-$a = 6;
-
-if($a !== 5) {
-   echo "$a = 5";
+$x = 4;
+switch ($x){
+    case 5:
+        echo "VAR: 5";
+        break;
+    case 7:
+        echo "VAR: 7";
+        break;
+    case 9:
+        echo "VAR: 9";
+        break;
+    case 6:
+        echo "VAR: 6";
+        break;
+    default:
+        echo "Default work!";
+        break;
 }
-*/
-
-
-    $a = 6;
-    $str = "Hello";
-    $isWeatherGood = false;
-
-    if($str != "Hello" or $isWeatherGood == false) { // ($str != "Hello" && !$isWeatherGood)
-           echo  "isWeatherGood";
-    }elseif ($a == 5) {
-        $res = '$a == 5';
-        echo $res;
-
-        if ($str == "Hello") {
-            echo '<br>yes $str = Hello';
-        }else {
-            echo "no!";
-        }
-
-    }elseif ($a > 50) {
-        echo '$a > 50';
-
-    }elseif ($a <= 4) {
-        echo '$a <= 45';
-
-    } else {
-        echo " else ";
-    }
 
 
 
