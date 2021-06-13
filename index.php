@@ -13,7 +13,7 @@
 </html>
 
 <?php
-
+/*
 $x = 4;
 switch ($x){
     case 5:
@@ -32,7 +32,28 @@ switch ($x){
         echo "Default work!";
         break;
 }
+*/
 
+
+$traffic_lights = "0";
+
+switch ($traffic_lights){
+    case 'red':
+        echo "red";
+        break;
+    case 'yellow':
+        echo "yellow";
+        break;
+    case 'green':
+        echo "green";
+        break;
+    case 'pedestrian':
+        echo "pedestrian";
+        break;
+    default:
+        echo "Alert, the traffic light does not work!";
+        break;
+}
 
 
 
