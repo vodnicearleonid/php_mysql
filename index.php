@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Уроки 6</title>
+    <title>Уроки PHP 8 – Массивы данных. Одномерные и многомерные</title>
 </head>
 <body>
 
@@ -13,47 +13,47 @@
 </html>
 
 <?php
-/*
-$x = 4;
-switch ($x){
-    case 5:
-        echo "VAR: 5";
-        break;
-    case 7:
-        echo "VAR: 7";
-        break;
-    case 9:
-        echo "VAR: 9";
-        break;
-    case 6:
-        echo "VAR: 6";
-        break;
-    default:
-        echo "Default work!";
-        break;
-}
-*/
+
+//Одномерные массивы
+$numbs = array(1, 3, -77, 4, 66, 8);
+$numbs[2] = 9;
+var_dump($numbs[2]);
+
+echo '<br>';
+
+//Multidimensional Arrays
+$arr = [4, true, 6, "8", 0.4, 'c', 24, 16];
+$arr[3] = "88";
+echo $arr[3];
+
+echo '<br>';
+
+//Associative Arrays
+$list = ["age" => 50, "name" => "Alex", "hobby" => "Football", 3 => "three"];
+$list["name"] = "Bob";
+echo $list["name"];
+
+echo '<br>';
+
+echo $list[3];
+
+echo '<br>';
+
+//многомерный массив
+$matrix = [
+        [4, 6.4, 8],
+        [3, 2],
+        [1, 5, 8, "test многомерный массив"]
+];
+echo $matrix[1][1] = "переопределения массива"; //переопределения массива
+
+echo '<br>';
+
+echo $matrix[2][3];
+
+echo '<br>';
 
 
-$traffic_lights = "0";
-
-switch ($traffic_lights){
-    case 'red':
-        echo "red";
-        break;
-    case 'yellow':
-        echo "yellow";
-        break;
-    case 'green':
-        echo "green";
-        break;
-    case 'pedestrian':
-        echo "pedestrian";
-        break;
-    default:
-        echo "Alert, the traffic light does not work!";
-        break;
-}
 
 
 
