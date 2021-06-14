@@ -14,79 +14,109 @@
 
 <?php
 
-//For
-
-//for ($i = 0; $i < 10; $i++){
-//    echo $i.'<br>';
+//function info($world){
+//    echo "$world<br>";
 //}
+//info(4);
+//info("hello");
+//info(5.6);
 
-//for ($i = 10; $i <= 20; $i++){
-//    echo $i.'<br>';
-//}
-
-//for ($i = 100; $i > 20; $i -= 5){
-//    echo $i.'<br>';
-//}
-
-
-//While
-
-//$i = 1;
+//echo '<br>';
 //
-//while ($i <= 10){
-//    echo $i . '<br>';
-//    $i++;
+//function math($x, $y){
+//    $res = $x + $y;
+//   info($res);
 //}
+//math(4, 6);
+//math(5, 5);
 
-
-//do while
-
-//$i = 100;
-//do {
-//    echo $i;
-//}while($i < 10);
-
-
-
-//for ($el = 100; $el > 10; $el /= 2 ){
-//    echo $el.'<br>';
-//}
-
-//for ($el = 100; $el > 10; $el /= 2 ){
-//    if ($el < 50)
-//        break;
-//    echo $el.'<br>';
-//}
-
-//for ($el = 100; $el > 10; $el /= 2 ){
+//echo '<br>';
 //
-//    if ($el < 15)
-//        break;
-//    if ($el % 2 == 0)
-//        continue;
-//
-//    echo $el.'<br>';
+//function math($x, $y){
+//    return $x + $y;
 //}
-
-//$list = [5, 7, 3, 8, "some", 45.7];
+//$res_1 = math(4, 6);
+//$res_2 = math(5, 5);
 //
-//for ($i = 0; $i < count($list); $i++){
-//    echo "Element -  $i: $list[$i]<br>";
+////info($res_1);
+////info($res_2);
+//
+//echo '<br>';
+
+//function summary($arr){
+//    $summa = 0;
+//    foreach ($arr as $value){
+//        $summa += $value;
+//    }
+//    return $summa;
 //}
+//
+//$list = [5, 7, 3];
+//echo summary($list)."<br>";
+//echo summary([5, 2, 9])."<br>";
 
-//foreach
-$list = ["age" => 45, "name" => "Alex", "hobby" => "Football"];
-$arr = [5, 7, 8, 9];
+//echo '<br>';
+//
+//function info(){
+//    $x = 0;
+//}
+//
+//$x = 10;
+//info();
+//echo $x;
 
-foreach ($list as $key => $value){
-    echo "Key: $key  Value: $value <br>";
+//echo '<br>';
+//
+//function info(){
+//    global $x;
+//    $x = 0;
+//}
+//
+//$x = 10;
+//info();
+//echo $x;
+
+//echo '<br>';
+//
+//function click(){
+//    static $count;
+//    $count++;
+//    echo  $count."<br>";
+//}
+//
+//click();
+//click();
+//click();
+//
+//echo '<br>';
+
+function click(){
+    //static $count;
+    $count = 0;
+    $count++;
+    echo  $count."<br>";
 }
 
-echo "<br>";
+click();
+click();
+click();
 
-foreach ($arr as $key => $value){
-    echo "Key: $key Value: $value<br>";
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
