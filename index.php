@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Уроки PHP 8 – Массивы данных. Одномерные и многомерные</title>
+    <title>Уроки PHP 9 – Цикл for, while и do while. Операторы циклов</title>
 </head>
 <body>
 
@@ -14,44 +14,88 @@
 
 <?php
 
-//Одномерные массивы
-$numbs = array(1, 3, -77, 4, 66, 8);
-$numbs[2] = 9;
-var_dump($numbs[2]);
+//For
 
-echo '<br>';
+//for ($i = 0; $i < 10; $i++){
+//    echo $i.'<br>';
+//}
 
-//Multidimensional Arrays
-$arr = [4, true, 6, "8", 0.4, 'c', 24, 16];
-$arr[3] = "88";
-echo $arr[3];
+//for ($i = 10; $i <= 20; $i++){
+//    echo $i.'<br>';
+//}
 
-echo '<br>';
+//for ($i = 100; $i > 20; $i -= 5){
+//    echo $i.'<br>';
+//}
 
-//Associative Arrays
-$list = ["age" => 50, "name" => "Alex", "hobby" => "Football", 3 => "three"];
-$list["name"] = "Bob";
-echo $list["name"];
 
-echo '<br>';
+//While
 
-echo $list[3];
+//$i = 1;
+//
+//while ($i <= 10){
+//    echo $i . '<br>';
+//    $i++;
+//}
 
-echo '<br>';
 
-//многомерный массив
-$matrix = [
-        [4, 6.4, 8],
-        [3, 2],
-        [1, 5, 8, "test многомерный массив"]
-];
-echo $matrix[1][1] = "переопределения массива"; //переопределения массива
+//do while
 
-echo '<br>';
+//$i = 100;
+//do {
+//    echo $i;
+//}while($i < 10);
 
-echo $matrix[2][3];
 
-echo '<br>';
+
+//for ($el = 100; $el > 10; $el /= 2 ){
+//    echo $el.'<br>';
+//}
+
+//for ($el = 100; $el > 10; $el /= 2 ){
+//    if ($el < 50)
+//        break;
+//    echo $el.'<br>';
+//}
+
+//for ($el = 100; $el > 10; $el /= 2 ){
+//
+//    if ($el < 15)
+//        break;
+//    if ($el % 2 == 0)
+//        continue;
+//
+//    echo $el.'<br>';
+//}
+
+//$list = [5, 7, 3, 8, "some", 45.7];
+//
+//for ($i = 0; $i < count($list); $i++){
+//    echo "Element -  $i: $list[$i]<br>";
+//}
+
+//foreach
+$list = ["age" => 45, "name" => "Alex", "hobby" => "Football"];
+$arr = [5, 7, 8, 9];
+
+foreach ($list as $key => $value){
+    echo "Key: $key  Value: $value <br>";
+}
+
+echo "<br>";
+
+foreach ($arr as $key => $value){
+    echo "Key: $key Value: $value<br>";
+}
+
+
+
+
+
+
+
+
+
 
 
 
