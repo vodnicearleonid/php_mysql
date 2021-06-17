@@ -5,13 +5,6 @@ require "blocks/header.php";
 
 <h3>Despre noi</h3>
 
-<!--<form action="" method="post">-->
-<!--    <input type="text" name="username" placeholder="Numele" class="form-group"><br>-->
-<!--    <input type="email" name="email" placeholder="Email" class="form-group"><br>-->
-<!--    <input type="password" name="password" placeholder="Parola" class="form-group"><br>-->
-<!--    <textarea name="message" placeholder="Text" class="form-group"></textarea><br>-->
-<!--    <input type="submit" value="Trimite" class="btn btn-primary">-->
-<!--</form>-->
 <div class="container mt-2">
 
     <form action="check_get.php" method="get">
