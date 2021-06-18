@@ -5,50 +5,63 @@ require "blocks/header.php";
 <h3>Pagina principala</h3>
 
 <?php
-//$file = fopen("text.txt", "w");
-//fwrite($file, "Exemplu de text scris in fisier prin limbajul de programare php");
-//fclose($file);
+//echo '<pre>';
+//print_r($_SERVER);
+//echo '</pre>';
+//phpinfo();
+
+//echo $_SERVER['HTTPS'];
+//echo $_SERVER['HTTP_HOST'];//localhost:63342
+//echo $_SERVER['HTTP_HOST']. ' - ' . $_SERVER['REQUEST_URI']; // localhost:63342 - /PHP_MySQL/index.php?_ijt=p3ljqddm5qm59asjt1lis73jne
+//echo $_SERVER['HTTP_USER_AGENT'];// Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36
+
+//echo $url = $_SERVER['REQUEST_URI'];///PHP_MySQL/index.php?_ijt=1dipbn1k8b7t90bpl5usjm11vf
+//echo '<br>';
 //
+//$link = explode("?_ijt=", $_SERVER['REQUEST_URI']); //Array ( [0] => /PHP_MySQL/index.php [1] => 1dipbn1k8b7t90bpl5usjm11vf )
+//print_r($link);
 //echo '<br>';
-//echo '<br>';
-
-//$file = fopen("text.txt", "a");
-//fwrite($file, "\nExemplu de adaugate text in fisier la cel existent");
-//fclose($file);
 //
-//echo '<br>';
+//$redirect = "http://".$_SERVER['HTTP_HOST'].$link[0]; //http://localhost:63342/PHP_MySQL/index.php
+//print_r($redirect);
 //echo '<br>';
 
-//$filename = "text.txt";
-//$file = fopen($filename, "r");
-//    $content = fread($file, filesize($filename));
-//fclose($file);
-//echo "<pre>" . $content . "</pre>";
+//echo '<pre>';
+//print_r($_SERVER);
+//echo '</pre>';
+////exit();
+//echo '<br>';
+
+//$url = $_SERVER['REQUEST_URI'];
+//$parse = parse_url($url);
+//$component = $parse['scheme'];
+//$arrparse = parse_url ($url, $component = -1);
+//print_r($arrparse);
 //
-//echo '<br>'; // test content file, test2, test3
+//exit();
 
-//$filename = "text.txt";
-//$file = fopen($filename, "r");
-//$content = fread($file, filesize($filename));
-//fclose($file);
-//echo "<pre>" . $content . "</pre>";
+if ($_GET['_ijt='] != ""){
+    $link = explode("?_ijt=", $_SERVER['REQUEST_URI']);
+    $redirect = "http://".$_SERVER['HTTP_HOST'].$link[0];
+    header('HTTP/1.1 301 Moved Permanently');
+    header('Location: ' .$redirect );
+    exit();
+}
 
-//echo '<br>'; // test content file, test2, test3
-//file_put_contents("text.txt", "text exemlu");//adauga test in fisierul creat sau existent
-//file_get_contents("a.txt");// afiseaza continutul text din fisier
 
-//echo "<br>";
-//echo file_exists("a.txt");// 1
 
-//echo "<br>";
-//rename("a.txt", "new.txt");//redenumeste fisierul a.txt in new.php
+//course
+//if ($_GET['_ijt='] != ""){
+//    $link = explode("?_ijt=", $_SERVER['REQUEST_URI']);
+//    $redirect = "http://".$_SERVER['HTTP_HOST'].$link[0];
+//    header('HTTP/1.1 301 Moved Permanently');
+//    header('Location: ' .$redirect );
+//    exit();
+//}
 
-//echo "<br>";
-//unlink("test.php");//sterge complet fisierul
 
-echo __FILE__;// /Users/leovodnicear/Documents/PHP_MySQL/index.php drumul fisierului
 
-echo fileperms(__FILE__);
+
 
 
 
