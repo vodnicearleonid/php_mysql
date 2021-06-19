@@ -26,11 +26,14 @@ require "blocks/header.php";
 //print_r($redirect);
 //echo '<br>';
 
-//echo '<pre>';
-//print_r($_SERVER);
-//echo '</pre>';
-////exit();
-//echo '<br>';
+
+
+//$arrUrl = parse_url($_SERVER['REQUEST_URI']);
+//if ($arrUrl['scheme'] != 'https') {
+//    header("Location: https://{$arrUrl['host']}/{$arrUrl['path']}");
+//   die;
+//}
+
 
 //$url = $_SERVER['REQUEST_URI'];
 //$parse = parse_url($url);
@@ -40,13 +43,46 @@ require "blocks/header.php";
 //
 //exit();
 
-if ($_GET['_ijt='] != ""){
-    $link = explode("?_ijt=", $_SERVER['REQUEST_URI']);
-    $redirect = "http://".$_SERVER['HTTP_HOST'].$link[0];
-    header('HTTP/1.1 301 Moved Permanently');
-    header('Location: ' .$redirect );
+//$url = parse_url('http://localhost:63342/PHP_MySQL/index.php?_ijt=e3ujtk0g77uaskl3ia7cgbskf1');
+//$url = $_SERVER['REQUEST_URI'];
+//print_r($url);
+
+//$arrUrl = parse_url($_SERVER['REQUEST_URI']);
+//print_r($arrUrl);
+
+//echo '<pre>';
+//print_r($_GET);
+//echo '</pre>';
+////exit();
+//
+//$first_part_url = explode('?', $_SERVER['REQUEST_URI']);
+//print_r($first_part_url);
+////exit();
+
+
+if (isset($_GET['_ijt'])) {
+    $first_part_url = explode('?', $_SERVER['REQUEST_URI']);
+    header("Location: " . $first_part_url[0]);
     exit();
 }
+
+//if ($_SERVER['REQUEST_URI'] != "") {
+//    $first_part_url = explode('?', $_SERVER['REQUEST_URI']);
+//    header("Location: " . $first_part_url[0]);
+//    exit();
+//}
+
+
+
+//if ($url["scheme"] != "https"){
+//
+//    $link = explode("?_ijt=", $_SERVER['REQUEST_URI']);
+//    $redirect = "http://".$_SERVER['HTTP_HOST'].$link[0];
+//    header('HTTP/1.1 301 Moved Permanently');
+//    header('Location: ' .$redirect );
+//    exit();
+//}
+
 
 
 
@@ -58,14 +94,6 @@ if ($_GET['_ijt='] != ""){
 //    header('Location: ' .$redirect );
 //    exit();
 //}
-
-
-
-
-
-
-
-
 
 
 require "blocks/footer.php";
