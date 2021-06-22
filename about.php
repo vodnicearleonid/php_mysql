@@ -3,7 +3,7 @@ $title = "Despre noi";
 require "blocks/header.php";
 ?>
 
-<h3>Despre noi</h3>
+<h3 class="mt-5">Despre noi</h3>
 
 <div class="container mt-2">
 

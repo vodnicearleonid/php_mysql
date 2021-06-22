@@ -10,8 +10,11 @@
     <title><?php echo $title ?></title>
 </head>
 <body>
+<div class="container mt-5">
 <header>
     <a href="index.php">Acasa</a> |
     <a href="about.php">Despre noi</a> |
-    <a href="contacts.php">Contacte</a>
+    <a href="contacts.php">Contacte</a> |
+    <a href="login.php">Login</a> |
+    <a href="test.php">Test</a>
 </header>
